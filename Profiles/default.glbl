@@ -10,33 +10,63 @@
       <name>Fetchr_Url</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>RECEIVED-CANCELLED</description>
       <initValue>'34134180154194'</initValue>
       <name>TN1</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Invalid</description>
       <initValue>'34151904217970000'</initValue>
       <name>TN2</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>ScheduledByMweb</description>
       <initValue>'34172147562365'</initValue>
       <name>TN3</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>DeliveryConfirmation</description>
       <initValue>'34152435932333'</initValue>
       <name>TN4</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>ScheduledByCallcenterblind</description>
       <initValue>'34125613330978'</initValue>
       <name>TN5</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>PICKED-CANCELLED</description>
       <initValue>'34124571209996'</initValue>
       <name>TN6</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'This order is ُRECEIVED/CANCELLED'</initValue>
+      <name>RECEIVEDCANCELLEDmsg</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'This tracking number is invalid.'</initValue>
+      <name>InvalidTNmsg</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'This order is ُPICKED/CANCELLED'</initValue>
+      <name>PICKEDCANCELLEDmsg</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'حالة الطلب هي RECEIVED/CANCELLED'</initValue>
+      <name>RECEIVEDCANCELLEDmsgAr</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'رقم الشحنه غير صحيح'</initValue>
+      <name>InvalidTNmsgAr</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'حالة الطلب هي PICKED/CANCELLED'</initValue>
+      <name>PICKEDCANCELLEDmsgAr</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
