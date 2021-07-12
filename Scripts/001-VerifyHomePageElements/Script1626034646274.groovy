@@ -43,15 +43,24 @@ WebUI.verifyElementVisible(findTestObject('HomePage/link_ChangeLangAr'), Failure
 
 WebUI.verifyElementVisible(findTestObject('HomePage/textBox_Search'), FailureHandling.STOP_ON_FAILURE)
 
+WebUI.verifyElementAttributeValue(findTestObject('HomePage/textBox_Search'), 'placeholder', 'Please enter your tracking number', 
+    30)
+
 WebUI.verifyElementVisible(findTestObject('HomePage/btn_Search'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('HomePage/icon_CallUs'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('HomePage/link_CallUs'), FailureHandling.STOP_ON_FAILURE)
 
+WebUI.verifyElementText(findTestObject('HomePage/link_CallUs'), 'Call us')
+
 WebUI.verifyElementVisible(findTestObject('HomePage/link_TandC'), FailureHandling.STOP_ON_FAILURE)
 
+WebUI.verifyElementText(findTestObject('HomePage/link_TandC'), 'Terms & Conditions')
+
 WebUI.verifyElementVisible(findTestObject('HomePage/link_PrivacyPolicy'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('HomePage/link_PrivacyPolicy'), 'Privacy policy')
 
 WebUI.waitForElementClickable(findTestObject('HomePage/link_ChangeLangAr'), 30)
 
@@ -69,13 +78,22 @@ WebUI.verifyElementVisible(findTestObject('HomePage/textBox_Search'), FailureHan
 
 WebUI.verifyElementVisible(findTestObject('HomePage/btn_Search'), FailureHandling.STOP_ON_FAILURE)
 
+WebUI.verifyElementAttributeValue(findTestObject('HomePage/textBox_Search'), 'placeholder', 'الرجاء أدخل الرقم الخاص بالشحنه', 
+    30)
+
 WebUI.verifyElementVisible(findTestObject('HomePage/icon_CallUs'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('HomePage/link_CallUs'), FailureHandling.STOP_ON_FAILURE)
 
+WebUI.verifyElementText(findTestObject('HomePage/link_CallUs'), 'إتصل بنا')
+
 WebUI.verifyElementVisible(findTestObject('HomePage/link_TandC'), FailureHandling.STOP_ON_FAILURE)
 
+WebUI.verifyElementText(findTestObject('HomePage/link_TandC'), 'الأحكام والشروط')
+
 WebUI.verifyElementVisible(findTestObject('HomePage/link_PrivacyPolicy'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('HomePage/link_PrivacyPolicy'), 'سياسة الخصوصية')
 
 WebUI.click(findTestObject('HomePage/link_ChangeLangEn'), FailureHandling.STOP_ON_FAILURE)
 
