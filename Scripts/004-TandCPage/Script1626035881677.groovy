@@ -51,3 +51,35 @@ if (!(temp.equals('http://track.fetchr.us/terms'))) {
 
 WebUI.verifyElementAttributeValue(findTestObject('TandC/label_CallUs'), 'href', 'tel:+97148018100', 30)
 
+WebUI.waitForElementClickable(findTestObject('TandC/link_ChangeLangAr'), 30, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.click(findTestObject('TandC/link_ChangeLangAr'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.waitForElementPresent(findTestObject('TandC/link_ChangeLangEn'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementVisible(findTestObject('TandC/link_ChangeLangEn'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementVisible(findTestObject('TandC/img_FetchrLogoAr'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.waitForElementClickable(findTestObject('TandC/link_ChangeLangEn'), 10, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('TandC/link_ChangeLangEn'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementPresent(findTestObject('TandC/link_ChangeLangAr'), 30, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementVisible(findTestObject('TandC/link_ChangeLangAr'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementVisible(findTestObject('TandC/img_FetchrLogoEn'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementClickable(findTestObject('TandC/img_FetchrLogoEn'), 30)
+
+WebUI.click(findTestObject('TandC/img_FetchrLogoEn'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementPresent(findTestObject('HomePage/btn_Search'), 30)
+
+temp = WebUI.getUrl()
+
+if (!(temp.equals('http://track.fetchr.us'))) {
+    assert false
+}
+
