@@ -29,13 +29,13 @@ WebUI.waitForElementPresent(findTestObject('HomePage/label_Covid-19-ResourcesUpd
 
 WebUI.verifyElementVisible(findTestObject('HomePage/label_Covid-19-ResourcesUpdates'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementClickable(findTestObject('HomePage/link_TandC'), 30)
+WebUI.waitForElementClickable(findTestObject('HomePage/link_PrivacyPolicy'), 30)
 
-WebUI.click(findTestObject('HomePage/link_TandC'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('HomePage/link_PrivacyPolicy'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementClickable(findTestObject('TandC/label_TermsandConditions'), 30)
+WebUI.waitForElementClickable(findTestObject('PrivacyPage/label_FtchrPrivacyPolicy'), 30)
 
-WebUI.verifyElementVisible(findTestObject('TandC/label_TermsandConditions'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('PrivacyPage/label_FtchrPrivacyPolicy'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('TandC/img_FetchrLogoEn'), FailureHandling.STOP_ON_FAILURE)
 
@@ -43,9 +43,29 @@ WebUI.verifyElementVisible(findTestObject('TandC/icon_CallUs'), FailureHandling.
 
 WebUI.verifyElementVisible(findTestObject('TandC/link_ChangeLangAr'), FailureHandling.STOP_ON_FAILURE)
 
+WebUI.verifyElementVisible(findTestObject('PrivacyPage/link_legal'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('PrivacyPage/link_legal'), 'www.fetchr.us/legal')
+
+WebUI.verifyElementAttributeValue(findTestObject('PrivacyPage/link_legal'), 'href', 'http://www.fetchr.us/legal', 30)
+
+WebUI.verifyElementVisible(findTestObject('PrivacyPage/link_ads-choices'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('PrivacyPage/link_ads-choices'), 'www.aboutads.info/choices')
+
+WebUI.verifyElementAttributeValue(findTestObject('PrivacyPage/link_ads-choices'), 'href', 'http://www.aboutads.info/choices', 
+    30)
+
+WebUI.verifyElementVisible(findTestObject('PrivacyPage/link_fetche-support'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('PrivacyPage/link_fetche-support'), 'support@fetchr.us')
+
+WebUI.verifyElementAttributeValue(findTestObject('PrivacyPage/link_fetche-support'), 'href', 'mailto:support@fetchr.us', 
+    30)
+
 temp = WebUI.getUrl()
 
-if (!(temp.equals('http://track.fetchr.us/terms'))) {
+if (!(temp.equals('http://track.fetchr.us/privacy'))) {
     assert false
 }
 
