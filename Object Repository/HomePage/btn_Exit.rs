@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>label-CurrentStatusEn</name>
+   <name>btn_Exit</name>
    <tag></tag>
-   <elementGuidId>7a93e8e1-5028-4521-a86b-e8aed7f788b4</elementGuidId>
+   <elementGuidId>002f25e5-e210-4d25-b99f-22141181d2e6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(text(),&quot;Current Status&quot;)]</value>
+         <value>//button[contains(text(),&quot;Exit&quot;)]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
