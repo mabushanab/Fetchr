@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>label-CurrentStatusDescEn</name>
+   <name>btn_IUnderstand</name>
    <tag></tag>
-   <elementGuidId>3c63338f-59ac-43e6-9712-f06c69caf8cf</elementGuidId>
+   <elementGuidId>2083a80f-860b-4ab8-8617-52bb6e86522e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(text(),&quot;Current Status&quot;)]/following-sibling::div</value>
+         <value>//button[contains(text(),&quot;I understand&quot;)]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

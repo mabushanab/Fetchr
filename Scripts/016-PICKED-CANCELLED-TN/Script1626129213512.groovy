@@ -39,11 +39,11 @@ WebUI.waitForElementClickable(findTestObject('HomePage/btn_Search'), 30)
 
 WebUI.click(findTestObject('HomePage/btn_Search'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('HomePage/label-CurrentStatusEn'), 30)
+WebUI.waitForElementPresent(findTestObject('HomePage/label_CurrentStatusEn'), 30)
 
-WebUI.verifyElementVisible(findTestObject('HomePage/label-CurrentStatusEn'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('HomePage/label_CurrentStatusEn'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementVisible(findTestObject('HomePage/label-CurrentStatusDescEn'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('HomePage/label_CurrentStatusDescEn'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('HomePage/label-CurrentStatusDescEn'), GlobalVariable.PICKEDCANCELLEDmsg)
+WebUI.verifyElementText(findTestObject('HomePage/label_CurrentStatusDescEn'), GlobalVariable.PICKEDCANCELLEDmsg)
 

@@ -45,13 +45,13 @@ WebUI.waitForElementClickable(findTestObject('HomePage/btn_Search'), 30)
 
 WebUI.click(findTestObject('HomePage/btn_Search'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('HomePage/label-CurrentStatusAr'), 30)
+WebUI.waitForElementPresent(findTestObject('HomePage/label_CurrentStatusAr'), 30)
 
-WebUI.verifyElementVisible(findTestObject('HomePage/label-CurrentStatusAr'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('HomePage/label_CurrentStatusAr'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementVisible(findTestObject('HomePage/label-CurrentStatusDescAr'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('HomePage/label_CurrentStatusDescAr'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('HomePage/label-CurrentStatusDescAr'), GlobalVariable.InvalidTNmsgAr)
+WebUI.verifyElementText(findTestObject('HomePage/label_CurrentStatusDescAr'), GlobalVariable.InvalidTNmsgAr)
 
 WebUI.setText(findTestObject('HomePage/textBox_Search'), '')
 

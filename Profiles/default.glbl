@@ -69,4 +69,19 @@
       <initValue>'حالة الطلب هي PICKED/CANCELLED'</initValue>
       <name>PICKEDCANCELLEDmsgAr</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Order is re-scheduled by mweb on'</initValue>
+      <name>ScheduledByMweb</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Order is scheduled by cheduled by call center blind on'</initValue>
+      <name>ScheduledByCallcenterblind</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'11 5th Street - الوصل - دبي - Dubai - United Arab Emirates'</initValue>
+      <name>Location</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
